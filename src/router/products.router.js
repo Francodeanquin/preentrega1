@@ -29,10 +29,21 @@ router.get("/:pid", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
-  const { title, description, price, thumbnail, code, stock } = req.body;
-  if (!title || !description || !price || !thumbnail || !code || !stock) {
+  const { title, description, category, price, status = true, thumbnail = [], code, stock } = req.body;
+  //validaciones
+  if (!title || !description || !category || !price || !code || !stock) {
     return res.status(400).json({ message: "Some data is missing" });
   }
+  if (
+    typeof title !== 'string' ||
+    typeof description !== 'string' ||
+    typeof code !== 'string' ||
+    typeof price !== 'number' ||
+    typeof stock !== 'number' ||
+    typeof category !== 'string'
+  )
+    return res.status(400).json({ message: "Wrong type of data, please check the fields" })
+    //Trycatch
   try {
     const newProd = await ProductManager.addProduct(req.body);
     res.status(200).json({ message: "Product created", prod: newProd });
@@ -45,8 +56,7 @@ router.post("/", async (req, res) => {
 
 router.delete("/:pid", async (req, res) => {
   const { pid } = req.params;
-  console.log(pid);
-  try {
+   try {
     const response = await ProductManager.deleteProduct(+pid);
     if (response === -1) {
       res.status(400).json({ message: "Product not found with the id" });

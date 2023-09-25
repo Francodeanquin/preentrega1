@@ -1,65 +1,47 @@
 [
     {
+        "id": 1,
+        "title": "Titanic",
+        "description": "Starfield es el primer universo nuevo en más de 25 años de Bethesda Game Studios, los galardonados creadores de The Elder Scrolls V: Skyrim y Fallout 4. En este juego de rol de próxima generación ambientado entre las estrellas, podrás hacerte el personaje que desees y explorar con una libertad sin precedentes mientras te embarcas en un viaje épico para desentrañar el mayor misterio de la humanidad",
+        "price": 11000,
+        "category": "rpg",
+        "code": "ndj287",
+        "stock": "100"
+    },
+    {
         "id": 2,
-        "title": "Terminator 2",
-        "description": "null",
-        "price": 1000,
-        "thumbnail": "https://terminator2",
-        "code": "1991",
-        "stock": "5"
+        "title": "Atomic Heart",
+        "description": "Un mundo utópico, tan delirante como sublime",
+        "price": 9990,
+        "category": "fps",
+        "code": "ncue87",
+        "stock": "250"
     },
     {
         "id": 3,
-        "title": "Rocky",
-        "description": "null",
-        "price": 800,
-        "thumbnail": "https://rocky",
-        "code": "1976",
-        "stock": "1"
+        "title": "Ghostwire: Tokyo",
+        "description": "Una Tokio embrujada pero hermosa",
+        "price": 9999,
+        "code": "ghst23",
+        "category": "fps",
+        "stock": "70"
     },
     {
         "id": 4,
-        "title": "Matrix",
-        "description": "null",
-        "price": 1000,
-        "thumbnail": "https://matrix",
-        "code": "1999",
-        "stock": "3"
+        "title": "Lies of P",
+        "description": "Lies of P es un soulslike trepidante que toma la conocida historia de Pinocho, le da la vuelta y la ubica en una belle époque elegante y oscura.",
+        "price": 2000,
+        "category": "rpg-soulslike",
+        "code": "nfdn73",
+        "stock": "15"
     },
     {
         "id": 5,
-        "title": "Inception",
-        "description": "null",
-        "price": 1000,
-        "thumbnail": "https://inception",
-        "code": "2010",
-        "stock": "3"
-    },
-    {
-        "id": 6,
-        "title": "Karate Kid",
-        "description": "null",
-        "price": 800,
-        "thumbnail": "https://karatekid",
-        "code": "1984",
-        "stock": "1"
-    },
-    {
-        "id": 7,
-        "title": "Titanic",
-        "description": "null",
-        "price": 1000,
-        "thumbnail": "https://titanic",
-        "code": "1997",
-        "stock": "5"
-    },
-    {
-        "id": 8,
-        "title": "Interestelar",
-        "description": "null",
-        "price": 1000,
-        "thumbnail": "https://interestelar",
-        "code": "2014",
-        "stock": "5"
+        "title": "Lords of the Fallen Deluxe Edition",
+        "description": "Un mundo inmenso te aguarda en este nuevo RPG de acción, ambientado en un universo de fantasía con tintes oscuros.",
+        "category": "rpg",
+        "price": 2000,
+        "code": "lvnif83",
+        "stock": "15"
     }
 ]
